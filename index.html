@@ -1,25 +1,68 @@
 <!DOCTYPE html>
 <html lang="jp">
   <head>
+    <!-- BootStrapCss -->
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
     />
+    <!-- 自前css -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- おまじない -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
   </head>
   <body>
-    <p>Helllw</p>
 
-    <div class="btn-group-vertical" role="group" aria-label="Basic example">
-      <button type="button" class="btn btn-secondary">Left</button>
-      <button type="button" class="btn btn-secondary">Middle</button>
-      <button type="button" class="btn btn-secondary">Right</button>
+    <!-- 枠 -->
+    <div class="body-group d-flex flex-column">
+      <!-- ヘッダー -->
+      <header class="Header sticky-top">
+        <div class="container">
+          <p class="text-muted">ミニ車両管理システム</p>
+        </div>
+      </header>
+
+      <!-- 中央領域 -->
+      <div class="center-group d-flex flex-row">
+        <!-- 左側領域 -->
+        <div class="left-group d-flex flex-column">
+          <div class="button-group d-flex flex-column">
+            <button type="button" class="btn btn-secondary" class="leftG">お知らせ</button>
+            <button type="button" class="btn btn-secondary">車両台帳</button>
+            <button type="button" class="btn btn-secondary">検査計画</button>
+            <button type="button" class="btn btn-secondary">使用実績</button>
+            <button type="button" class="btn btn-secondary">研修管理</button>
+            <button type="button" class="btn btn-secondary">装備管理</button>
+            <button type="button" class="btn btn-secondary">マスタ管理</button>
+          </div>
+        </div>
+        <!-- 中央領域 -->
+        <div class="center-group d-flex flex-column align-items-stretch">
+          <div class="a">aa</div>
+          <div class="a">aa</div>
+          <div class="a">aa</div>
+          <div class="a">aa</div>
+          <div class="a">aa</div>
+          <div class="a">aa</div>
+        </div>
+      </div>
+
+      <!-- フッター -->
+      <footer class="Footer fixed-bottom">
+        <div class="container">
+          <p class="text-muted">Place sticky footer content here.</p>
+        </div>
+      </footer>
     </div>
   </body>
+
+  <!-- jQuery -->
+  <!-- //フッター -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <!-- Vue -->
   <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 </html>

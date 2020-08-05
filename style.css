@@ -1,0 +1,38 @@
+html {
+  height: 100%;
+}
+
+html body {
+  height: 100%;
+  overflow: hidden;
+}
+
+.Header {
+  top: 0;
+  height: 30px;
+  background-color: #3eb623;
+}
+
+.center-group {
+  background-color: #6c757d;
+}
+
+.center-group .left-group {
+  height: 100vh;
+  width: 20%;
+}
+
+.center-group .left-group .button-group .btn-secondary {
+  border-radius: 0px;
+}
+
+.center-group .center-group {
+  height: 100vh;
+  width: 100vh;
+  background-color: #10334b4d;
+}
+
+.Footer {
+  background-color: #3eb623;
+}
+/*# sourceMappingURL=style.css.map */
