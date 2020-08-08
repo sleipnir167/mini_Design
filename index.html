@@ -16,38 +16,140 @@
     <title>Document</title>
   </head>
   <body>
-
     <!-- 枠 -->
     <div class="body-group d-flex flex-column">
       <!-- ヘッダー -->
-      <header class="Header sticky-top">
-        <div class="container">
-          <p class="text-muted">ミニ車両管理システム</p>
-        </div>
-      </header>
+
+      <div class="header-group sticky-top">
+        <header class="Header">
+          <div class="container">
+            <p class="text-muted">ミニ車両管理システム</p>
+          </div>
+        </header>
+      </div>
 
       <!-- 中央領域 -->
       <div class="center-group d-flex flex-row">
         <!-- 左側領域 -->
         <div class="left-group d-flex flex-column">
           <div class="button-group d-flex flex-column">
-            <button type="button" class="btn btn-secondary" class="leftG">お知らせ</button>
-            <button type="button" class="btn btn-secondary">車両台帳</button>
-            <button type="button" class="btn btn-secondary">検査計画</button>
-            <button type="button" class="btn btn-secondary">使用実績</button>
-            <button type="button" class="btn btn-secondary">研修管理</button>
-            <button type="button" class="btn btn-secondary">装備管理</button>
-            <button type="button" class="btn btn-secondary">マスタ管理</button>
+            <button type="button" class="btn btn-secondary" class="leftG" onclick="location.href='http://msok.mydns.jp:5500/index.html'">
+              お知らせ
+            </button>
+            <button type="button" class="btn btn-secondary" onclick="location.href='http://msok.mydns.jp:5500/2.html'">車両台帳</button>
+            <button type="button" class="btn btn-secondary" onclick="location.href='http://msok.mydns.jp:5500/3.html'">検査計画</button>
+            <button type="button" class="btn btn-secondary" onclick="location.href='http://msok.mydns.jp:5500/4.html'">使用実績</button>
+            <button type="button" class="btn btn-secondary" onclick="location.href='http://msok.mydns.jp:5500/5.html'">研修管理</button>
+            <button type="button" class="btn btn-secondary" onclick="location.href='http://msok.mydns.jp:5500/6.html'">装備管理</button>
+            <button type="button" class="btn btn-secondary" onclick="location.href='http://msok.mydns.jp:5500/7.html'">マスタ管理</button>
           </div>
         </div>
         <!-- 中央領域 -->
-        <div class="center-group d-flex flex-column align-items-stretch">
-          <div class="a">aa</div>
-          <div class="a">aa</div>
-          <div class="a">aa</div>
-          <div class="a">aa</div>
-          <div class="a">aa</div>
-          <div class="a">aa</div>
+        <div class="center-group">
+          <div
+            class="card text-white bg-primary m-2 d-inline-block"
+            style="max-width: 20rem;"
+          >
+            <div class="card-header">あれのおしらせ</div>
+            <div class="card-body">
+              <p class="card-title">あれがあれです。</p>
+              <p class="card-text">あれしてください。</p>
+            </div>
+          </div>
+          <div
+            class="card text-white bg-dark m-2 d-inline-block"
+            style="max-width: 20rem;"
+          >
+            <div class="card-header">それのおしらせ</div>
+            <div class="card-body">
+              <p class="card-title">それがそれです。</p>
+              <p class="card-text">それしてください。</p>
+            </div>
+          </div>
+
+          <div
+            class="card text-black alert-primary m-2 d-inline-block"
+            style="max-width: 20rem;"
+          >
+            <div class="card-header">あれのおしらせ</div>
+            <div class="card-body">
+              <p class="card-title">あれがあれです。</p>
+              <p class="card-text">あれしてください。</p>
+            </div>
+          </div>
+          <div
+            class="card text-black alert-dark m-2 d-inline-block"
+            style="max-width: 20rem;"
+          >
+            <div class="card-header">それのおしらせ</div>
+            <div class="card-body">
+              <p class="card-title">それがそれです。</p>
+              <p class="card-text">それしてください。</p>
+            </div>
+          </div>
+
+          <div class="card">
+            <h4 class="card-header">管理者からのお知らせ</h4>
+            <div class="card-body">
+              <h5 class="card-title">
+                2020/8/11〜2020/8/16はお盆でお休みです。
+              </h5>
+              <p class="card-text">
+                詳細は下のリンクから確認してください。
+              </p>
+              <a href="#!" class="btn btn-primary">詳細はここをクリック</a>
+            </div>
+          </div>
+
+          <div class="info m-2 border border-primary">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>No</th>
+                  <th>日付</th>
+                  <th>所属1</th>
+                  <th>所属2</th>
+                  <th>所属3</th>
+                  <th>車種</th>
+                  <th>車両</th>
+                  <th>記事</th>
+                  <th></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="table-danger">
+                  <th scope="row">1</th>
+                  <td>200/8/4</td>
+                  <td>東京総合</td>
+                  <td>XX所属</td>
+                  <td>XX所属</td>
+                  <td>H101</td>
+                  <td>TC 101 0001</td>
+                  <td>A保全が検査切れが警告域です</td>
+                </tr>
+                <tr class="table-danger">
+                  <th scope="row">1</th>
+                  <td>200/8/4</td>
+                  <td>東京総合</td>
+                  <td>XX所属</td>
+                  <td>XX所属</td>
+                  <td>H101</td>
+                  <td>TC 101 0002</td>
+                  <td>A保全が検査切れが警告域です</td>
+                </tr>
+                <tr>
+                  <th scope="row">2</th>
+                  <td>200/8/4</td>
+                  <td>東京総合</td>
+                  <td>XX所属</td>
+                  <td>XX所属</td>
+                  <td>H101</td>
+                  <td>TC 101 001</td>
+                  <td>本日仕業検査予定日です。</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
         </div>
       </div>
 

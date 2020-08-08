@@ -4,20 +4,22 @@ html {
 
 html body {
   height: 100%;
-  overflow: hidden;
 }
 
-.Header {
-  top: 0;
+.header-group {
   height: 30px;
   background-color: #3eb623;
 }
 
 .center-group {
   background-color: #6c757d;
+  height: auto;
+  width: auto;
 }
 
 .center-group .left-group {
+  min-width: 110px;
+  max-width: 110px;
   height: 100vh;
   width: 20%;
 }
@@ -27,12 +29,41 @@ html body {
 }
 
 .center-group .center-group {
-  height: 100vh;
-  width: 100vh;
-  background-color: #10334b4d;
+  width: 100%;
+  background-color: #ebebeb;
 }
 
 .Footer {
+  height: 30px;
   background-color: #3eb623;
+}
+
+.center-group .card {
+  -webkit-box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.4);
+          box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.4);
+}
+
+.mycalender td {
+  border: solid 0.1px red;
+  width: 100px;
+}
+
+.center-group .container {
+  border: solid 2px orange;
+}
+
+.KensaGridP {
+  height: 100px;
+  width: 800px;
+  overflow: hidden;
+  overflow-x: scroll;
+  white-space: nowrap;
+}
+
+.KensaGridP .KensaGridC {
+  height: 40px;
+  width: 40px;
+  display: inline-block;
+  clear: left;
 }
 /*# sourceMappingURL=style.css.map */
