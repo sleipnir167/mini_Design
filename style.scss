@@ -1,9 +1,11 @@
 html {
-  height: 100%;
+  // height: 100%;
+  // width: 100%;
+  overflow:hidden;
 }
 html body {
-  height: 100%;
-  // overflow: hidden;
+  // height: 100%;
+  overflow:hidden;
 }
 
 // ヘッダー
@@ -22,15 +24,22 @@ html body {
     min-width: 110px;
     max-width: 110px;
     height: 100vh;
-    width: 20%;
     & .button-group {
       & .btn-secondary {
         border-radius: 0px;
       }
     }
   }
+  & .card {
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.4);
+  }
+
+  & .container {
+    // background-color: red;
+    border: solid 2px orange;
+  }
   // 中央領域
-  & .center-group {
+  & .center-cente-group {
     width: 100%;
     background-color: rgb(235, 235, 235);
   }
@@ -42,40 +51,57 @@ html body {
   background-color: #3eb623;
 }
 
-.center-group {
-  & .card {
-    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.4);
-  }
-}
 
-.mycalender {
-  // overflow:auto;
-  // width: 500px;
-  & td {
-    border: solid 0.1px red;
-    width: 100px;
-    // background-color: red;
-  }
-}
 
-.center-group {
-  & .container {
-    // background-color: red;
-    border: solid 2px orange;
-  }
-}
 
-// 検査計画
-.KensaGridP {
-  height: 100px;
-  width: 800px;
+#calendar{
+  border:solid 1px red;
   overflow: hidden;
-  overflow-x: scroll;
-  white-space: nowrap;
-  & .KensaGridC {
-    height: 40px;
-    width: 40px;
-    display: inline-block;
-    clear: left;
+  // padding:0px;
+  // margin:10px;
+
+  & .waku-Head{
+    color:blue; 
+    // border:solid 1px red;
+    // box-sizing: content-box;
+  }
+  & .waku-Data{
+    color:blue;
+    // border:solid 1px greenyellow;
+    // width:100px;
+  }
+  & .waku-left{
+    color:blue; 
+    min-width:150px;
+    // border:solid 1px red;
+  }
+  & .waku-right{
+    color:blue; 
+    overflow-x: scroll;
+    // box-sizing: border-box;
+    // width:100%;
+  }
+
+  // 検査計画Grid左
+  & .KensaGridLeftP {
+    white-space: nowrap;
+    & .KensaGridLeftC {
+      height: 40px;
+      text-align: center;
+      border:solid 1px;
+    }
+  }
+
+  // 検査計画Grid右
+  & .KensaGridDataP {
+    white-space: nowrap;
+    & .KensaGridDataC {
+      height: 40px;
+      width: 40px;
+      display: inline-block;
+      // clear: left;
+      text-align: center;
+      border:solid 1px;
+    }
   }
 }

@@ -1,9 +1,9 @@
 html {
-  height: 100%;
+  overflow: hidden;
 }
 
 html body {
-  height: 100%;
+  overflow: hidden;
 }
 
 .header-group {
@@ -21,14 +21,22 @@ html body {
   min-width: 110px;
   max-width: 110px;
   height: 100vh;
-  width: 20%;
 }
 
 .center-group .left-group .button-group .btn-secondary {
   border-radius: 0px;
 }
 
-.center-group .center-group {
+.center-group .card {
+  -webkit-box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.4);
+          box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.4);
+}
+
+.center-group .container {
+  border: solid 2px orange;
+}
+
+.center-group .center-cente-group {
   width: 100%;
   background-color: #ebebeb;
 }
@@ -38,32 +46,48 @@ html body {
   background-color: #3eb623;
 }
 
-.center-group .card {
-  -webkit-box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.4);
-          box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.4);
-}
-
-.mycalender td {
-  border: solid 0.1px red;
-  width: 100px;
-}
-
-.center-group .container {
-  border: solid 2px orange;
-}
-
-.KensaGridP {
-  height: 100px;
-  width: 800px;
+#calendar {
+  border: solid 1px red;
   overflow: hidden;
+}
+
+#calendar .waku-Head {
+  color: blue;
+}
+
+#calendar .waku-Data {
+  color: blue;
+}
+
+#calendar .waku-left {
+  color: blue;
+  min-width: 150px;
+}
+
+#calendar .waku-right {
+  color: blue;
   overflow-x: scroll;
+}
+
+#calendar .KensaGridLeftP {
   white-space: nowrap;
 }
 
-.KensaGridP .KensaGridC {
+#calendar .KensaGridLeftP .KensaGridLeftC {
+  height: 40px;
+  text-align: center;
+  border: solid 1px;
+}
+
+#calendar .KensaGridDataP {
+  white-space: nowrap;
+}
+
+#calendar .KensaGridDataP .KensaGridDataC {
   height: 40px;
   width: 40px;
   display: inline-block;
-  clear: left;
+  text-align: center;
+  border: solid 1px;
 }
 /*# sourceMappingURL=style.css.map */

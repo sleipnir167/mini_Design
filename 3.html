@@ -33,22 +33,73 @@
         <!-- 左側領域 -->
         <div class="left-group d-flex flex-column">
           <div class="button-group d-flex flex-column">
-            <button type="button" class="btn btn-secondary" class="leftG" onclick="location.href='http://msok.mydns.jp:5500/index.html'">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              class="leftG"
+              onclick="location.href='http://msok.mydns.jp:5500/index.html'"
+            >
               お知らせ
             </button>
-            <button type="button" class="btn btn-secondary" onclick="location.href='http://msok.mydns.jp:5500/2.html'">車両台帳</button>
-            <button type="button" class="btn btn-secondary" onclick="location.href='http://msok.mydns.jp:5500/3.html'">検査計画</button>
-            <button type="button" class="btn btn-secondary" onclick="location.href='http://msok.mydns.jp:5500/4.html'">使用実績</button>
-            <button type="button" class="btn btn-secondary" onclick="location.href='http://msok.mydns.jp:5500/5.html'">研修管理</button>
-            <button type="button" class="btn btn-secondary" onclick="location.href='http://msok.mydns.jp:5500/6.html'">装備管理</button>
-            <button type="button" class="btn btn-secondary" onclick="location.href='http://msok.mydns.jp:5500/7.html'">マスタ管理</button>
+            <button
+              type="button"
+              class="btn btn-secondary"
+              onclick="location.href='http://msok.mydns.jp:5500/2.html'"
+            >
+              車両台帳
+            </button>
+            <button
+              type="button"
+              class="btn btn-secondary"
+              onclick="location.href='http://msok.mydns.jp:5500/3.html'"
+            >
+              検査計画
+            </button>
+            <button
+              type="button"
+              class="btn btn-secondary"
+              onclick="location.href='http://msok.mydns.jp:5500/4.html'"
+            >
+              使用実績
+            </button>
+            <button
+              type="button"
+              class="btn btn-secondary"
+              onclick="location.href='http://msok.mydns.jp:5500/5.html'"
+            >
+              研修管理
+            </button>
+            <button
+              type="button"
+              class="btn btn-secondary"
+              onclick="location.href='http://msok.mydns.jp:5500/6.html'"
+            >
+              装備管理
+            </button>
+            <button
+              type="button"
+              class="btn btn-secondary"
+              onclick="location.href='http://msok.mydns.jp:5500/7.html'"
+            >
+              マスタ管理
+            </button>
           </div>
         </div>
         <!-- 中央領域 -->
-        <div class="center-group">
-          <div class="mycalender container">
-            <div id="calendar"></div>
+        <div class="center-cente-group">
+          <!-- <div class="mycalender container"> -->
+            <div class="mycalender container" id="calendar"></div>
+          <!-- </div> -->
+          <div class="left-fixed">aaa</div>
+          <div id="components-demo">
+            <button-counter></button-counter>
           </div>
+          
+          <div id="contents">
+            <template_view-day-info></template_view-day-info>
+            <template_view-day-info></template_view-day-info>
+          </div>
+          
         </div>
       </div>
 
@@ -62,9 +113,13 @@
   </body>
 
   <!-- jQuery -->
-  <!-- //フッター -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <!-- Vue -->
   <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
   <script src="calender.js"></script>
+  <script src="test.js"></script>
+  <!-- Vue-Parts -->
+  <script src="./VueComponent/Parts/ViewDayInfo/ViewDayInfo.js"></script>
+  <link rel="stylesheet" href="./VueComponent/Parts/ViewDayInfo/ViewDayInfo.css" />
+
 </html>

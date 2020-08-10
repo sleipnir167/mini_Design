@@ -1,0 +1,15 @@
+.ViewDayInfo{
+    width:50px;
+    box-sizing: border-box;
+    font-size: 10px;
+    border: ridge 1px;
+    
+    & .firstLine{
+        height:20px;
+    }
+
+    & .secondLine{
+        height:20px;
+        border-top: dotted 1px 
+    }
+}
